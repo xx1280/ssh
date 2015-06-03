@@ -1,0 +1,57 @@
+14:50:36,003 INFO  [org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@353e9cf: display name [org.springframework.context.support.ClassPathXmlApplicationContext@353e9cf]; startup date [Mon May 25 14:50:35 CST 2015]; root of context hierarchy
+14:50:36,065 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [beans.xml]
+14:50:36,435 INFO  [org.springframework.context.support.ClassPathXmlApplicationContext] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@353e9cf]: org.springframework.beans.factory.support.DefaultListableBeanFactory@797ff11f
+14:50:36,492 INFO  [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] Loading properties file from class path resource [jdbc.properties]
+14:50:36,559 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@797ff11f: defining beans [logDAOImpl,userDAOImpl,userService,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,logIntercepter,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,txManager,org.springframework.aop.config.internalAutoProxyCreator,businessService,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,txAdvice]; root of factory hierarchy
+14:50:36,868 INFO  [org.hibernate.cfg.annotations.Version] Hibernate Annotations 3.4.0.GA
+14:50:36,875 INFO  [org.hibernate.cfg.Environment] Hibernate 3.3.2.GA
+14:50:36,877 INFO  [org.hibernate.cfg.Environment] hibernate.properties not found
+14:50:36,880 INFO  [org.hibernate.cfg.Environment] Bytecode provider name : javassist
+14:50:36,884 INFO  [org.hibernate.cfg.Environment] using JDK 1.4 java.sql.Timestamp handling
+14:50:36,954 INFO  [org.hibernate.annotations.common.Version] Hibernate Commons Annotations 3.1.0.GA
+14:50:37,009 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.bjsxt.model.Log
+14:50:37,034 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.bjsxt.model.Log on table Log
+14:50:37,065 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.bjsxt.model.User
+14:50:37,065 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.bjsxt.model.User on table User
+14:50:37,092 INFO  [org.hibernate.cfg.AnnotationConfiguration] Hibernate Validator not found: ignoring
+14:50:37,092 INFO  [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean] Building new Hibernate SessionFactory
+14:50:37,095 INFO  [org.hibernate.cfg.search.HibernateSearchEventListenerRegister] Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+14:50:37,149 INFO  [org.hibernate.connection.ConnectionProviderFactory] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+14:50:37,393 INFO  [org.hibernate.cfg.SettingsFactory] RDBMS: MySQL, version: 5.6.21-log
+14:50:37,393 INFO  [org.hibernate.cfg.SettingsFactory] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+14:50:37,413 INFO  [org.hibernate.dialect.Dialect] Using dialect: org.hibernate.dialect.MySQLDialect
+14:50:37,416 INFO  [org.hibernate.transaction.TransactionFactoryFactory] Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+14:50:37,416 INFO  [org.hibernate.transaction.TransactionManagerLookupFactory] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+14:50:37,417 INFO  [org.hibernate.cfg.SettingsFactory] Automatic flush during beforeCompletion(): disabled
+14:50:37,417 INFO  [org.hibernate.cfg.SettingsFactory] Automatic session close at end of transaction: disabled
+14:50:37,417 INFO  [org.hibernate.cfg.SettingsFactory] JDBC batch size: 15
+14:50:37,417 INFO  [org.hibernate.cfg.SettingsFactory] JDBC batch updates for versioned data: disabled
+14:50:37,418 INFO  [org.hibernate.cfg.SettingsFactory] Scrollable result sets: enabled
+14:50:37,418 INFO  [org.hibernate.cfg.SettingsFactory] JDBC3 getGeneratedKeys(): enabled
+14:50:37,418 INFO  [org.hibernate.cfg.SettingsFactory] Connection release mode: auto
+14:50:37,419 INFO  [org.hibernate.cfg.SettingsFactory] Maximum outer join fetch depth: 2
+14:50:37,419 INFO  [org.hibernate.cfg.SettingsFactory] Default batch fetch size: 1
+14:50:37,419 INFO  [org.hibernate.cfg.SettingsFactory] Generate SQL with comments: disabled
+14:50:37,419 INFO  [org.hibernate.cfg.SettingsFactory] Order SQL updates by primary key: disabled
+14:50:37,419 INFO  [org.hibernate.cfg.SettingsFactory] Order SQL inserts for batching: disabled
+14:50:37,419 INFO  [org.hibernate.cfg.SettingsFactory] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+14:50:37,422 INFO  [org.hibernate.hql.ast.ASTQueryTranslatorFactory] Using ASTQueryTranslatorFactory
+14:50:37,422 INFO  [org.hibernate.cfg.SettingsFactory] Query language substitutions: {}
+14:50:37,422 INFO  [org.hibernate.cfg.SettingsFactory] JPA-QL strict compliance: disabled
+14:50:37,422 INFO  [org.hibernate.cfg.SettingsFactory] Second-level cache: enabled
+14:50:37,422 INFO  [org.hibernate.cfg.SettingsFactory] Query cache: disabled
+14:50:37,423 INFO  [org.hibernate.cfg.SettingsFactory] Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+14:50:37,423 INFO  [org.hibernate.cfg.SettingsFactory] Optimize cache for minimal puts: disabled
+14:50:37,423 INFO  [org.hibernate.cfg.SettingsFactory] Structured second-level cache entries: disabled
+14:50:37,427 INFO  [org.hibernate.cfg.SettingsFactory] Echoing all SQL to stdout
+14:50:37,427 INFO  [org.hibernate.cfg.SettingsFactory] Statistics: disabled
+14:50:37,427 INFO  [org.hibernate.cfg.SettingsFactory] Deleted entity synthetic identifier rollback: disabled
+14:50:37,427 INFO  [org.hibernate.cfg.SettingsFactory] Default entity-mode: pojo
+14:50:37,428 INFO  [org.hibernate.cfg.SettingsFactory] Named query checking : enabled
+14:50:37,470 INFO  [org.hibernate.impl.SessionFactoryImpl] building session factory
+14:50:37,634 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] Not binding factory to JNDI, no JNDI name configured
+14:50:37,767 INFO  [org.springframework.orm.hibernate3.HibernateTransactionManager] Using DataSource [org.apache.commons.dbcp.BasicDataSource@3f34f761] of Hibernate SessionFactory for HibernateTransactionManager
+14:50:38,176 INFO  [org.springframework.context.support.ClassPathXmlApplicationContext] Closing org.springframework.context.support.ClassPathXmlApplicationContext@353e9cf: display name [org.springframework.context.support.ClassPathXmlApplicationContext@353e9cf]; startup date [Mon May 25 14:50:35 CST 2015]; root of context hierarchy
+14:50:38,177 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@797ff11f: defining beans [logDAOImpl,userDAOImpl,userService,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,logIntercepter,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,txManager,org.springframework.aop.config.internalAutoProxyCreator,businessService,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,txAdvice]; root of factory hierarchy
+14:50:38,185 INFO  [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean] Closing Hibernate SessionFactory
+14:50:38,185 INFO  [org.hibernate.impl.SessionFactoryImpl] closing

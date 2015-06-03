@@ -1,0 +1,548 @@
+INFO main org.springframework.orm.hibernate3.HibernateTransactionManager - Using DataSource [org.apache.commons.dbcp.BasicDataSource@6270c836] of Hibernate SessionFactory for HibernateTransactionManager
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'txManager'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean '(inner bean)'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [getUser] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
+DEBUG main org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [add*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean '(inner bean)'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'txAdvice'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'txAdvice'
+DEBUG main org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator - Creating implicit proxy for bean 'userService' with 0 common interceptors and 2 specific interceptors
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Creating CGLIB2 proxy: target source is SingletonTargetSource for target object [com.bjsxt.service.UserService@27c53921]
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Unable to apply any optimisations to advised method: public void com.bjsxt.service.UserService.add(com.bjsxt.model.User)
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Unable to apply any optimisations to advised method: public void com.bjsxt.service.UserService.init()
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Unable to apply any optimisations to advised method: public void com.bjsxt.service.UserService.destroy()
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Unable to apply any optimisations to advised method: public void com.bjsxt.service.UserService.setLogDAO(com.bjsxt.dao.LogDao)
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Unable to apply any optimisations to advised method: public com.bjsxt.dao.UserDAO com.bjsxt.service.UserService.getUserDAO()
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Unable to apply any optimisations to advised method: public void com.bjsxt.service.UserService.setUserDAO(com.bjsxt.dao.UserDAO)
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Unable to apply any optimisations to advised method: public com.bjsxt.dao.LogDao com.bjsxt.service.UserService.getLogDAO()
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Found finalize() method - using NO_OVERRIDE
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Found 'equals' method: public boolean java.lang.Object.equals(java.lang.Object)
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Unable to apply any optimisations to advised method: public java.lang.String java.lang.Object.toString()
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Found 'hashCode' method: public native int java.lang.Object.hashCode()
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Unable to apply any optimisations to advised method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.springframework.aop.Advisor)
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.aopalliance.aop.Advice)
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isFrozen()
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(int,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isExposeProxy()
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract java.lang.String org.springframework.aop.framework.Advised.toProxyConfigString()
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isInterfaceProxied(java.lang.Class)
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.replaceAdvisor(org.springframework.aop.Advisor,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract java.lang.Class[] org.springframework.aop.framework.Advised.getProxiedInterfaces()
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract org.springframework.aop.TargetSource org.springframework.aop.framework.Advised.getTargetSource()
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setTargetSource(org.springframework.aop.TargetSource)
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setPreFiltered(boolean)
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setExposeProxy(boolean)
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isProxyTargetClass()
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvisor(org.springframework.aop.Advisor)
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.removeAdvisor(int) throws org.springframework.aop.framework.AopConfigException
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(int,org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvice(org.aopalliance.aop.Advice)
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isPreFiltered()
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract org.springframework.aop.Advisor[] org.springframework.aop.framework.Advised.getAdvisors()
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract java.lang.Class org.springframework.aop.TargetClassAware.getTargetClass()
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'userService'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logIntercepter'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'logIntercepter'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'logIntercepter' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'logIntercepter'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'dataSource'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'txManager'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'txAdvice'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'userService'
+DEBUG main org.springframework.orm.hibernate3.HibernateTransactionManager - Creating new transaction with name [com.bjsxt.service.UserService.add]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+DEBUG main org.hibernate.impl.SessionImpl - opened session at timestamp: 14325167172
+DEBUG main org.springframework.orm.hibernate3.HibernateTransactionManager - Opened new Session [org.hibernate.impl.SessionImpl@1595f1bb] for Hibernate transaction
+DEBUG main org.springframework.orm.hibernate3.HibernateTransactionManager - Preparing JDBC Connection of Hibernate Session [org.hibernate.impl.SessionImpl@1595f1bb]
+DEBUG main org.hibernate.transaction.JDBCTransaction - begin
+DEBUG main org.hibernate.jdbc.ConnectionManager - opening JDBC connection
+DEBUG main org.hibernate.transaction.JDBCTransaction - current autocommit status: true
+DEBUG main org.hibernate.transaction.JDBCTransaction - disabling autocommit
+DEBUG main org.springframework.orm.hibernate3.HibernateTransactionManager - Exposing Hibernate transaction as JDBC transaction [jdbc:mysql://localhost:3306/spring, UserName=root@localhost, MySQL-AB JDBC Driver]
+DEBUG main org.hibernate.event.def.AbstractSaveEventListener - executing identity-insert immediately
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - insert into User (name) values (?)
+DEBUG main org.hibernate.id.IdentifierGeneratorFactory - Natively generated identity: 18
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.hibernate.event.def.AbstractSaveEventListener - executing identity-insert immediately
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - insert into Log (msg) values (?)
+DEBUG main org.hibernate.id.IdentifierGeneratorFactory - Natively generated identity: 3
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.springframework.orm.hibernate3.HibernateTransactionManager - Initiating transaction commit
+DEBUG main org.springframework.orm.hibernate3.HibernateTransactionManager - Committing Hibernate transaction on Session [org.hibernate.impl.SessionImpl@1595f1bb]
+DEBUG main org.hibernate.transaction.JDBCTransaction - commit
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 2 objects
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG main org.hibernate.pretty.Printer - listing entities:
+DEBUG main org.hibernate.pretty.Printer - com.bjsxt.model.Log{id=3, msg=save a User at }
+DEBUG main org.hibernate.pretty.Printer - com.bjsxt.model.User{id=18, name=5xxxx5}
+DEBUG main org.hibernate.transaction.JDBCTransaction - re-enabling autocommit
+DEBUG main org.hibernate.transaction.JDBCTransaction - committed JDBC Connection
+DEBUG main org.hibernate.jdbc.ConnectionManager - transaction completed on session with on_close connection release mode; be sure to close the session to release JDBC resources!
+DEBUG main org.springframework.orm.hibernate3.HibernateTransactionManager - Closing Hibernate Session [org.hibernate.impl.SessionImpl@1595f1bb] after transaction
+DEBUG main org.springframework.orm.hibernate3.SessionFactoryUtils - Closing Hibernate Session
+DEBUG main org.hibernate.jdbc.ConnectionManager - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+DEBUG main org.hibernate.jdbc.ConnectionManager - transaction completed on session with on_close connection release mode; be sure to close the session to release JDBC resources!
+INFO main org.springframework.context.support.ClassPathXmlApplicationContext - Closing org.springframework.context.support.ClassPathXmlApplicationContext@62bb8ae8: display name [org.springframework.context.support.ClassPathXmlApplicationContext@62bb8ae8]; startup date [Mon May 25 09:18:31 CST 2015]; root of context hierarchy
+INFO main org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6c880adc: defining beans [logDAOImpl,userDAOImpl,userService,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,logIntercepter,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,txManager,org.springframework.aop.config.internalAutoProxyCreator,businessService,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,txAdvice]; root of factory hierarchy
+DEBUG main org.springframework.context.annotation.CommonAnnotationBeanPostProcessor - Invoking destroy method on bean 'userService': public void com.bjsxt.service.UserService.destroy()
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Retrieved dependent beans for bean '(inner bean)': [txAdvice]
+DEBUG main org.springframework.beans.factory.support.DisposableBeanAdapter - Invoking destroy() on bean with name 'sessionFactory'
+INFO main org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean - Closing Hibernate SessionFactory
+INFO main org.hibernate.impl.SessionFactoryImpl - closing
+DEBUG main org.springframework.beans.factory.support.DisposableBeanAdapter - Invoking destroy method 'close' on bean with name 'dataSource'
+INFO main org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@62bb8ae8: display name [org.springframework.context.support.ClassPathXmlApplicationContext@62bb8ae8]; startup date [Mon May 25 11:43:27 CST 2015]; root of context hierarchy
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [beans.xml]
+DEBUG main org.springframework.beans.factory.xml.DefaultDocumentLoader - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Loading schema mappings from [META-INF/spring.schemas]
+DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Loaded schema mappings: {http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/jms/spring-jms-2.5.xsd=org/springframework/jms/config/spring-jms-2.5.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/jms/spring-jms.xsd=org/springframework/jms/config/spring-jms-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd}
+DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/beans/spring-beans-2.5.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-2.5.xsd
+DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/context/spring-context-2.5.xsd] in classpath: org/springframework/context/config/spring-context-2.5.xsd
+DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/aop/spring-aop-2.5.xsd] in classpath: org/springframework/aop/config/spring-aop-2.5.xsd
+DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/tx/spring-tx-2.5.xsd] in classpath: org/springframework/transaction/config/spring-tx-2.5.xsd
+DEBUG main org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader - Loading bean definitions
+DEBUG main org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver - Loaded mappings [{http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jms=org.springframework.jms.config.JmsNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt] for files matching pattern [F:/java/project/Spring_1800_HibernateSpring/bin/com/bjsxt/**/*.class]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\aop] for files matching pattern [F:/java/project/Spring_1800_HibernateSpring/bin/com/bjsxt/**/*.class]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\dao] for files matching pattern [F:/java/project/Spring_1800_HibernateSpring/bin/com/bjsxt/**/*.class]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\dao\impl] for files matching pattern [F:/java/project/Spring_1800_HibernateSpring/bin/com/bjsxt/**/*.class]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\model] for files matching pattern [F:/java/project/Spring_1800_HibernateSpring/bin/com/bjsxt/**/*.class]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\service] for files matching pattern [F:/java/project/Spring_1800_HibernateSpring/bin/com/bjsxt/**/*.class]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/bjsxt/**/*.class] to resources [file [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\aop\LogInterceptor.class], file [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\dao\impl\LogDAOImpl.class], file [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\dao\impl\UserDAOImpl.class], file [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\dao\LogDao.class], file [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\dao\UserDAO.class], file [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\model\Log.class], file [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\model\User.class], file [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\service\UserService.class], file [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\service\UserServiceTest.class]]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\dao\impl\LogDAOImpl.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\dao\impl\UserDAOImpl.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\service\UserService.class]
+DEBUG main org.springframework.beans.factory.xml.BeanDefinitionParserDelegate - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0]
+DEBUG main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 16 bean definitions from location pattern [beans.xml]
+INFO main org.springframework.context.support.ClassPathXmlApplicationContext - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@62bb8ae8]: org.springframework.beans.factory.support.DefaultListableBeanFactory@6c880adc
+DEBUG main org.springframework.context.support.ClassPathXmlApplicationContext - 16 beans defined in org.springframework.context.support.ClassPathXmlApplicationContext@62bb8ae8: display name [org.springframework.context.support.ClassPathXmlApplicationContext@62bb8ae8]; startup date [Mon May 25 11:43:27 CST 2015]; root of context hierarchy
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+INFO main org.springframework.beans.factory.config.PropertyPlaceholderConfigurer - Loading properties file from class path resource [jdbc.properties]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.aop.config.internalAutoProxyCreator' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+DEBUG main org.springframework.context.support.ClassPathXmlApplicationContext - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@165c3e75]
+DEBUG main org.springframework.context.support.ClassPathXmlApplicationContext - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@763d6442]
+INFO main org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6c880adc: defining beans [logDAOImpl,userDAOImpl,userService,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,logIntercepter,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,txManager,org.springframework.aop.config.internalAutoProxyCreator,businessService,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,txAdvice]; root of factory hierarchy
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logDAOImpl'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'logDAOImpl'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'businessService'
+DEBUG main org.aspectj.weaver.World$TypeMap - 11:43:30.443 main > org.aspectj.weaver.World$TypeMap.<init> org.aspectj.weaver.World$TypeMap@46ef0a4f org.aspectj.weaver.reflect.ReflectionWorld@778decea
+DEBUG main org.aspectj.weaver.World$TypeMap - 11:43:30.496 main < org.aspectj.weaver.World$TypeMap.<init>
+DEBUG main org.aspectj.weaver.CrosscuttingMembersSet - 11:43:30.502 main > org.aspectj.weaver.CrosscuttingMembersSet.<init> org.aspectj.weaver.CrosscuttingMembersSet@65639ad4 org.aspectj.weaver.reflect.ReflectionWorld@778decea
+DEBUG main org.aspectj.weaver.CrosscuttingMembersSet - 11:43:30.503 main < org.aspectj.weaver.CrosscuttingMembersSet.<init>
+DEBUG main org.aspectj.weaver.Lint - 11:43:30.512 main > org.aspectj.weaver.Lint.<init> org.aspectj.weaver.Lint@535f79a4 org.aspectj.weaver.reflect.ReflectionWorld@778decea
+DEBUG main org.aspectj.weaver.Lint - 11:43:30.513 main < org.aspectj.weaver.Lint.<init>
+DEBUG main org.aspectj.weaver.World - 11:43:30.513 main > org.aspectj.weaver.World.<init> org.aspectj.weaver.reflect.ReflectionWorld@778decea
+DEBUG main org.aspectj.weaver.Dump - 11:43:30.521 main > org.aspectj.weaver.Dump.registerNode class org.aspectj.weaver.reflect.ReflectionWorld, org.aspectj.weaver.reflect.ReflectionWorld@778decea
+DEBUG main org.aspectj.weaver.Dump - 11:43:30.522 main < org.aspectj.weaver.Dump.registerNode 1
+DEBUG main org.aspectj.weaver.World - 11:43:30.592 main < org.aspectj.weaver.World.<init>
+DEBUG main org.aspectj.weaver.World$TypeMap - 11:43:30.595 main > org.aspectj.weaver.World$TypeMap.<init> org.aspectj.weaver.World$TypeMap@17fdee7e org.aspectj.weaver.reflect.ReflectionWorld@20349e80
+DEBUG main org.aspectj.weaver.World$TypeMap - 11:43:30.599 main < org.aspectj.weaver.World$TypeMap.<init>
+DEBUG main org.aspectj.weaver.CrosscuttingMembersSet - 11:43:30.599 main > org.aspectj.weaver.CrosscuttingMembersSet.<init> org.aspectj.weaver.CrosscuttingMembersSet@5e91f604 org.aspectj.weaver.reflect.ReflectionWorld@20349e80
+DEBUG main org.aspectj.weaver.CrosscuttingMembersSet - 11:43:30.600 main < org.aspectj.weaver.CrosscuttingMembersSet.<init>
+DEBUG main org.aspectj.weaver.Lint - 11:43:30.600 main > org.aspectj.weaver.Lint.<init> org.aspectj.weaver.Lint@40aeb11d org.aspectj.weaver.reflect.ReflectionWorld@20349e80
+DEBUG main org.aspectj.weaver.Lint - 11:43:30.601 main < org.aspectj.weaver.Lint.<init>
+DEBUG main org.aspectj.weaver.World - 11:43:30.601 main > org.aspectj.weaver.World.<init> org.aspectj.weaver.reflect.ReflectionWorld@20349e80
+DEBUG main org.aspectj.weaver.Dump - 11:43:30.601 main > org.aspectj.weaver.Dump.registerNode class org.aspectj.weaver.reflect.ReflectionWorld, org.aspectj.weaver.reflect.ReflectionWorld@20349e80
+DEBUG main org.aspectj.weaver.Dump - 11:43:30.601 main < org.aspectj.weaver.Dump.registerNode 2
+DEBUG main org.aspectj.weaver.World - 11:43:30.603 main < org.aspectj.weaver.World.<init>
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'businessService'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Found injected method on class [com.bjsxt.dao.impl.LogDAOImpl]: ResourceElement for public void com.bjsxt.dao.impl.LogDAOImpl.setSessionFactory(org.hibernate.SessionFactory)
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'logDAOImpl' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'logDAOImpl': ResourceElement for public void com.bjsxt.dao.impl.LogDAOImpl.setSessionFactory(org.hibernate.SessionFactory)
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'sessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'sessionFactory' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSource'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'dataSource'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'dataSource' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'dataSource'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'sessionFactory'
+INFO main org.hibernate.cfg.annotations.Version - Hibernate Annotations 3.4.0.GA
+INFO main org.hibernate.cfg.Environment - Hibernate 3.3.2.GA
+INFO main org.hibernate.cfg.Environment - hibernate.properties not found
+INFO main org.hibernate.cfg.Environment - Bytecode provider name : javassist
+INFO main org.hibernate.cfg.Environment - using JDK 1.4 java.sql.Timestamp handling
+INFO main org.hibernate.annotations.common.Version - Hibernate Commons Annotations 3.1.0.GA
+DEBUG main org.hibernate.cfg.AnnotationConfiguration - Execute first pass mapping processing
+DEBUG main org.hibernate.cfg.AnnotationConfiguration - Process hbm files
+DEBUG main org.hibernate.cfg.AnnotationConfiguration - Process annotated classes
+INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.bjsxt.model.User
+DEBUG main org.hibernate.cfg.Ejb3Column - Binding column DTYPE. Unique false. Nullable false.
+DEBUG main org.hibernate.cfg.annotations.EntityBinder - Import with entity name User
+INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity com.bjsxt.model.User on table User
+DEBUG main org.hibernate.cfg.AnnotationBinder - Processing com.bjsxt.model.User property annotation
+DEBUG main org.hibernate.cfg.AnnotationBinder - Processing annotations of com.bjsxt.model.User.id
+DEBUG main org.hibernate.cfg.Ejb3Column - Binding column id. Unique false. Nullable false.
+DEBUG main org.hibernate.cfg.AnnotationBinder - id is an id
+DEBUG main org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for id
+DEBUG main org.hibernate.cfg.annotations.PropertyBinder - Building property id
+DEBUG main org.hibernate.cfg.AnnotationBinder - Bind @Id on id
+DEBUG main org.hibernate.cfg.AnnotationBinder - Processing annotations of com.bjsxt.model.User.name
+DEBUG main org.hibernate.cfg.Ejb3Column - Binding column name. Unique false. Nullable true.
+DEBUG main org.hibernate.cfg.annotations.PropertyBinder - binding property name with lazy=false
+DEBUG main org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for name
+DEBUG main org.hibernate.cfg.annotations.PropertyBinder - Building property name
+INFO main org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.bjsxt.model.Log
+DEBUG main org.hibernate.cfg.Ejb3Column - Binding column DTYPE. Unique false. Nullable false.
+DEBUG main org.hibernate.cfg.annotations.EntityBinder - Import with entity name Log
+INFO main org.hibernate.cfg.annotations.EntityBinder - Bind entity com.bjsxt.model.Log on table Log
+DEBUG main org.hibernate.cfg.AnnotationBinder - Processing com.bjsxt.model.Log property annotation
+DEBUG main org.hibernate.cfg.AnnotationBinder - Processing annotations of com.bjsxt.model.Log.id
+DEBUG main org.hibernate.cfg.Ejb3Column - Binding column id. Unique false. Nullable false.
+DEBUG main org.hibernate.cfg.AnnotationBinder - id is an id
+DEBUG main org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for id
+DEBUG main org.hibernate.cfg.annotations.PropertyBinder - Building property id
+DEBUG main org.hibernate.cfg.AnnotationBinder - Bind @Id on id
+DEBUG main org.hibernate.cfg.AnnotationBinder - Processing annotations of com.bjsxt.model.Log.msg
+DEBUG main org.hibernate.cfg.Ejb3Column - Binding column msg. Unique false. Nullable true.
+DEBUG main org.hibernate.cfg.annotations.PropertyBinder - binding property msg with lazy=false
+DEBUG main org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for msg
+DEBUG main org.hibernate.cfg.annotations.PropertyBinder - Building property msg
+DEBUG main org.hibernate.cfg.AnnotationConfiguration - processing fk mappings (*ToOne and JoinedSubclass)
+DEBUG main org.hibernate.cfg.Configuration - processing extends queue
+DEBUG main org.hibernate.cfg.Configuration - processing collection mappings
+DEBUG main org.hibernate.cfg.Configuration - processing native query and ResultSetMapping mappings
+DEBUG main org.hibernate.cfg.Configuration - processing association property references
+DEBUG main org.hibernate.cfg.Configuration - processing foreign key constraints
+INFO main org.hibernate.cfg.AnnotationConfiguration - Hibernate Validator not found: ignoring
+INFO main org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean - Building new Hibernate SessionFactory
+DEBUG main org.hibernate.cfg.AnnotationConfiguration - Validator not present in classpath, ignoring event listener registration
+DEBUG main org.hibernate.cfg.search.HibernateSearchEventListenerRegister - Search not present in classpath, ignoring event listener registration.
+INFO main org.hibernate.cfg.search.HibernateSearchEventListenerRegister - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+DEBUG main org.hibernate.cfg.Configuration - Preparing to build session factory with filters : {}
+DEBUG main org.hibernate.cfg.AnnotationConfiguration - Execute first pass mapping processing
+DEBUG main org.hibernate.cfg.AnnotationConfiguration - Process hbm files
+DEBUG main org.hibernate.cfg.AnnotationConfiguration - Process annotated classes
+DEBUG main org.hibernate.cfg.AnnotationConfiguration - processing fk mappings (*ToOne and JoinedSubclass)
+DEBUG main org.hibernate.cfg.Configuration - processing extends queue
+DEBUG main org.hibernate.cfg.Configuration - processing collection mappings
+DEBUG main org.hibernate.cfg.Configuration - processing native query and ResultSetMapping mappings
+DEBUG main org.hibernate.cfg.Configuration - processing association property references
+DEBUG main org.hibernate.cfg.Configuration - processing foreign key constraints
+INFO main org.hibernate.connection.ConnectionProviderFactory - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+INFO main org.hibernate.cfg.SettingsFactory - RDBMS: MySQL, version: 5.6.21-log
+INFO main org.hibernate.cfg.SettingsFactory - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+INFO main org.hibernate.dialect.Dialect - Using dialect: org.hibernate.dialect.MySQLDialect
+INFO main org.hibernate.transaction.TransactionFactoryFactory - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+INFO main org.hibernate.transaction.TransactionManagerLookupFactory - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO main org.hibernate.cfg.SettingsFactory - Automatic flush during beforeCompletion(): disabled
+INFO main org.hibernate.cfg.SettingsFactory - Automatic session close at end of transaction: disabled
+INFO main org.hibernate.cfg.SettingsFactory - JDBC batch size: 15
+INFO main org.hibernate.cfg.SettingsFactory - JDBC batch updates for versioned data: disabled
+INFO main org.hibernate.cfg.SettingsFactory - Scrollable result sets: enabled
+DEBUG main org.hibernate.cfg.SettingsFactory - Wrap result sets: disabled
+INFO main org.hibernate.cfg.SettingsFactory - JDBC3 getGeneratedKeys(): enabled
+INFO main org.hibernate.cfg.SettingsFactory - Connection release mode: auto
+INFO main org.hibernate.cfg.SettingsFactory - Maximum outer join fetch depth: 2
+INFO main org.hibernate.cfg.SettingsFactory - Default batch fetch size: 1
+INFO main org.hibernate.cfg.SettingsFactory - Generate SQL with comments: disabled
+INFO main org.hibernate.cfg.SettingsFactory - Order SQL updates by primary key: disabled
+INFO main org.hibernate.cfg.SettingsFactory - Order SQL inserts for batching: disabled
+INFO main org.hibernate.cfg.SettingsFactory - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO main org.hibernate.hql.ast.ASTQueryTranslatorFactory - Using ASTQueryTranslatorFactory
+INFO main org.hibernate.cfg.SettingsFactory - Query language substitutions: {}
+INFO main org.hibernate.cfg.SettingsFactory - JPA-QL strict compliance: disabled
+INFO main org.hibernate.cfg.SettingsFactory - Second-level cache: enabled
+INFO main org.hibernate.cfg.SettingsFactory - Query cache: disabled
+INFO main org.hibernate.cfg.SettingsFactory - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+INFO main org.hibernate.cfg.SettingsFactory - Optimize cache for minimal puts: disabled
+INFO main org.hibernate.cfg.SettingsFactory - Structured second-level cache entries: disabled
+INFO main org.hibernate.cfg.SettingsFactory - Echoing all SQL to stdout
+INFO main org.hibernate.cfg.SettingsFactory - Statistics: disabled
+INFO main org.hibernate.cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+INFO main org.hibernate.cfg.SettingsFactory - Default entity-mode: pojo
+INFO main org.hibernate.cfg.SettingsFactory - Named query checking : enabled
+INFO main org.hibernate.impl.SessionFactoryImpl - building session factory
+DEBUG main org.hibernate.impl.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+DEBUG main org.hibernate.impl.SessionFactoryImpl - instantiating session factory with properties: {java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=D:\Java\jdk1.7\jre\bin, java.vm.version=24.65-b04, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=;, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.script=, user.country=CN, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=, java.vm.specification.name=Java Virtual Machine Specification, user.dir=F:\java\project\Spring_1800_HibernateSpring, java.runtime.version=1.7.0_67-b01, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, hibernate.current_session_context_class=org.springframework.orm.hibernate3.SpringSessionContext, java.endorsed.dirs=D:\Java\jdk1.7\jre\lib\endorsed, os.arch=amd64, java.io.tmpdir=C:\Users\Ñó\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Windows 8.1, sun.jnu.encoding=GBK, java.library.path=D:\Java\jdk1.7\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;D:\Java\jdk1.7\bin;D:\Java\jdk1.7\jre\bin;., java.specification.name=Java Platform API Specification, java.class.version=51.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, hibernate.transaction.factory_class=org.springframework.orm.hibernate3.SpringTransactionFactory, os.version=6.3, user.home=F:, user.timezone=Asia/Shanghai, java.awt.printerjob=sun.awt.windows.WPrinterJob, java.specification.version=1.7, file.encoding=GBK, user.name=Ð¤ÑóµÄµçÄÔ, java.class.path=F:\java\project\Spring_1800_HibernateSpring\bin;D:\eclipse-4.4.1\plugins\org.junit_4.11.0.v201303080030\junit.jar;D:\eclipse-4.4.1\plugins\org.hamcrest.core_1.3.0.v201303031735.jar;H:\JAR\jdom\jdom.jar;H:\JAR\Springsoft\spring-framework-2.5.6\dist\spring.jar;H:\JAR\Springsoft\spring-framework-2.5.6\lib\jakarta-commons\commons-logging.jar;H:\JAR\Springsoft\spring-framework-2.5.6\lib\j2ee\common-annotations.jar;H:\JAR\Springsoft\spring-framework-2.5.6\lib\aspectj\aspectjrt.jar;H:\JAR\Springsoft\spring-framework-2.5.6\lib\aspectj\aspectjweaver.jar;H:\JAR\Springsoft\spring-framework-2.5.6\lib\cglib\cglib-nodep-2.1_3.jar;H:\JAR\Springsoft\spring-framework-2.5.6\lib\jakarta-commons\commons-dbcp.jar;H:\JAR\Springsoft\spring-framework-2.5.6\lib\jakarta-commons\commons-pool.jar;H:\JAR\mysql-connector-java-5.0.8-bin.jar;H:\JAR\hibernatechangyong\antlr-2.7.6.jar;H:\JAR\hibernatechangyong\commons-collections-3.1.jar;H:\JAR\hibernatechangyong\dom4j-1.6.1.jar;H:\JAR\hibernatechangyong\ehcache-1.2.3.jar;H:\JAR\hibernatechangyong\ejb3-persistence.jar;H:\JAR\hibernatechangyong\hibernate3.jar;H:\JAR\hibernatechangyong\hibernate-annotations.jar;H:\JAR\hibernatechangyong\hibernate-commons-annotations.jar;H:\JAR\hibernatechangyong\javassist-3.9.0.GA.jar;H:\JAR\hibernatechangyong\jta-1.1.jar;H:\JAR\hibernatechangyong\junit-4.7.jar;H:\JAR\hibernatechangyong\slf4j-api-1.5.8.jar;H:\JAR\hibernatechangyong\slf4j-log4j12-1.5.8.jar;H:\JAR\hibernatechangyong\log4j-1.2.17.jar;/D:/eclipse-4.4.1/configuration/org.eclipse.osgi/362/0/.cp/;/D:/eclipse-4.4.1/configuration/org.eclipse.osgi/361/0/.cp/, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, java.vm.specification.version=1.7, sun.arch.data.model=64, java.home=D:\Java\jdk1.7\jre, sun.java.command=org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 60681 -testLoaderClass org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader -loaderpluginname org.eclipse.jdt.junit4.runtime -classNames com.bjsxt.service.UserServiceTest, hibernate.dialect=org.hibernate.dialect.MySQLDialect, java.specification.vendor=Oracle Corporation, user.language=zh, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.7.0_67, java.ext.dirs=D:\Java\jdk1.7\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, sun.boot.class.path=D:\Java\jdk1.7\jre\lib\resources.jar;D:\Java\jdk1.7\jre\lib\rt.jar;D:\Java\jdk1.7\jre\lib\sunrsasign.jar;D:\Java\jdk1.7\jre\lib\jsse.jar;D:\Java\jdk1.7\jre\lib\jce.jar;D:\Java\jdk1.7\jre\lib\charsets.jar;D:\Java\jdk1.7\jre\lib\jfr.jar;D:\Java\jdk1.7\jre\classes, java.vendor=Oracle Corporation, file.separator=\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, hibernate.connection.provider_class=org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider, sun.cpu.endian=little, sun.io.unicode.encoding=UnicodeLittle, sun.desktop=windows, sun.cpu.isalist=amd64}
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: com.bjsxt.model.Log
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select id from Log where id =?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select log_.id, log_.msg as msg1_ from Log log_ where log_.id=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into Log (msg, id) values (?, ?)
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update Log set msg=? where id=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from Log where id=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Identity insert: insert into Log (msg) values (?)
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: com.bjsxt.model.User
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select id from User where id =?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select user_.id, user_.name as name0_ from User user_ where user_.id=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into User (name, id) values (?, ?)
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update User set name=? where id=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from User where id=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Identity insert: insert into User (name) values (?)
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.bjsxt.model.Log: select log0_.id as id1_0_, log0_.msg as msg1_0_ from Log log0_ where log0_.id=?
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.bjsxt.model.Log: select log0_.id as id1_0_, log0_.msg as msg1_0_ from Log log0_ where log0_.id=?
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.bjsxt.model.Log: select log0_.id as id1_0_, log0_.msg as msg1_0_ from Log log0_ where log0_.id=? for update
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.bjsxt.model.Log: select log0_.id as id1_0_, log0_.msg as msg1_0_ from Log log0_ where log0_.id=? for update
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.bjsxt.model.Log: select log0_.id as id1_0_, log0_.msg as msg1_0_ from Log log0_ where log0_.id=? for update
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for action ACTION_MERGE on entity com.bjsxt.model.Log: select log0_.id as id1_0_, log0_.msg as msg1_0_ from Log log0_ where log0_.id=?
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for action ACTION_REFRESH on entity com.bjsxt.model.Log: select log0_.id as id1_0_, log0_.msg as msg1_0_ from Log log0_ where log0_.id=?
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.bjsxt.model.User: select user0_.id as id0_0_, user0_.name as name0_0_ from User user0_ where user0_.id=?
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.bjsxt.model.User: select user0_.id as id0_0_, user0_.name as name0_0_ from User user0_ where user0_.id=?
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.bjsxt.model.User: select user0_.id as id0_0_, user0_.name as name0_0_ from User user0_ where user0_.id=? for update
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.bjsxt.model.User: select user0_.id as id0_0_, user0_.name as name0_0_ from User user0_ where user0_.id=? for update
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for entity com.bjsxt.model.User: select user0_.id as id0_0_, user0_.name as name0_0_ from User user0_ where user0_.id=? for update
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for action ACTION_MERGE on entity com.bjsxt.model.User: select user0_.id as id0_0_, user0_.name as name0_0_ from User user0_ where user0_.id=?
+DEBUG main org.hibernate.loader.entity.EntityLoader - Static select for action ACTION_REFRESH on entity com.bjsxt.model.User: select user0_.id as id0_0_, user0_.name as name0_0_ from User user0_ where user0_.id=?
+DEBUG main org.hibernate.impl.SessionFactoryObjectFactory - initializing class SessionFactoryObjectFactory
+DEBUG main org.hibernate.impl.SessionFactoryObjectFactory - registered: 4028f9814d892b20014d892b24e50000 (unnamed)
+INFO main org.hibernate.impl.SessionFactoryObjectFactory - Not binding factory to JNDI, no JNDI name configured
+DEBUG main org.hibernate.impl.SessionFactoryImpl - instantiated session factory
+DEBUG main org.hibernate.impl.SessionFactoryImpl - Checking 0 named HQL queries
+DEBUG main org.hibernate.impl.SessionFactoryImpl - Checking 0 named SQL queries
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'sessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'logDAOImpl'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userDAOImpl'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'userDAOImpl'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Found injected method on class [com.bjsxt.dao.impl.UserDAOImpl]: ResourceElement for public void com.bjsxt.dao.impl.UserDAOImpl.setSessionFactory(org.hibernate.SessionFactory)
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'userDAOImpl' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'userDAOImpl': ResourceElement for public void com.bjsxt.dao.impl.UserDAOImpl.setSessionFactory(org.hibernate.SessionFactory)
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'userDAOImpl'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userService'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'userService'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.context.annotation.CommonAnnotationBeanPostProcessor - Found init method on class [com.bjsxt.service.UserService]: public void com.bjsxt.service.UserService.init()
+DEBUG main org.springframework.context.annotation.CommonAnnotationBeanPostProcessor - Found destroy method on class [com.bjsxt.service.UserService]: public void com.bjsxt.service.UserService.destroy()
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Found injected method on class [com.bjsxt.service.UserService]: ResourceElement for public void com.bjsxt.service.UserService.setUserDAO(com.bjsxt.dao.UserDAO)
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Found injected method on class [com.bjsxt.service.UserService]: ResourceElement for public void com.bjsxt.service.UserService.setLogDAO(com.bjsxt.dao.LogDao)
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'userService' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'userService': ResourceElement for public void com.bjsxt.service.UserService.setUserDAO(com.bjsxt.dao.UserDAO)
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'userDAOImpl'
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'userService': ResourceElement for public void com.bjsxt.service.UserService.setLogDAO(com.bjsxt.dao.LogDao)
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'logDAOImpl'
+DEBUG main org.springframework.context.annotation.CommonAnnotationBeanPostProcessor - Invoking init method on bean 'userService': public void com.bjsxt.service.UserService.init()
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'txAdvice'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'txAdvice'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'txAdvice' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'txManager'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'txManager'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'txManager' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'txManager'
+INFO main org.springframework.orm.hibernate3.HibernateTransactionManager - Using DataSource [org.apache.commons.dbcp.BasicDataSource@630ab5bc] of Hibernate SessionFactory for HibernateTransactionManager
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'txManager'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean '(inner bean)'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [getUser] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
+DEBUG main org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource - Adding transactional method [add*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean '(inner bean)'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'txAdvice'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'txAdvice'
+DEBUG main org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator - Creating implicit proxy for bean 'userService' with 0 common interceptors and 2 specific interceptors
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Creating CGLIB2 proxy: target source is SingletonTargetSource for target object [com.bjsxt.service.UserService@23500dea]
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Unable to apply any optimisations to advised method: public void com.bjsxt.service.UserService.add(com.bjsxt.model.User)
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Unable to apply any optimisations to advised method: public void com.bjsxt.service.UserService.init()
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Unable to apply any optimisations to advised method: public void com.bjsxt.service.UserService.destroy()
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Unable to apply any optimisations to advised method: public com.bjsxt.dao.UserDAO com.bjsxt.service.UserService.getUserDAO()
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Unable to apply any optimisations to advised method: public void com.bjsxt.service.UserService.setUserDAO(com.bjsxt.dao.UserDAO)
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Unable to apply any optimisations to advised method: public void com.bjsxt.service.UserService.setLogDAO(com.bjsxt.dao.LogDao)
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Unable to apply any optimisations to advised method: public com.bjsxt.dao.LogDao com.bjsxt.service.UserService.getLogDAO()
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Found finalize() method - using NO_OVERRIDE
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Found 'equals' method: public boolean java.lang.Object.equals(java.lang.Object)
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Unable to apply any optimisations to advised method: public java.lang.String java.lang.Object.toString()
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Found 'hashCode' method: public native int java.lang.Object.hashCode()
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Unable to apply any optimisations to advised method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.springframework.aop.Advisor)
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.aopalliance.aop.Advice)
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isFrozen()
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setTargetSource(org.springframework.aop.TargetSource)
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isProxyTargetClass()
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract org.springframework.aop.TargetSource org.springframework.aop.framework.Advised.getTargetSource()
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setExposeProxy(boolean)
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setPreFiltered(boolean)
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isExposeProxy()
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(int,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract java.lang.String org.springframework.aop.framework.Advised.toProxyConfigString()
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isInterfaceProxied(java.lang.Class)
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract java.lang.Class[] org.springframework.aop.framework.Advised.getProxiedInterfaces()
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.replaceAdvisor(org.springframework.aop.Advisor,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isPreFiltered()
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvice(org.aopalliance.aop.Advice)
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract org.springframework.aop.Advisor[] org.springframework.aop.framework.Advised.getAdvisors()
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.removeAdvisor(int) throws org.springframework.aop.framework.AopConfigException
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvisor(org.springframework.aop.Advisor)
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(int,org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+DEBUG main org.springframework.aop.framework.Cglib2AopProxy - Method is declared on Advised interface: public abstract java.lang.Class org.springframework.aop.TargetClassAware.getTargetClass()
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'userService'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logIntercepter'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'logIntercepter'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'logIntercepter' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'logIntercepter'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'dataSource'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sessionFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'txManager'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'txAdvice'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'userService'
+DEBUG main org.springframework.orm.hibernate3.HibernateTransactionManager - Creating new transaction with name [com.bjsxt.service.UserService.add]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+DEBUG main org.hibernate.impl.SessionImpl - opened session at timestamp: 14325254159
+DEBUG main org.springframework.orm.hibernate3.HibernateTransactionManager - Opened new Session [org.hibernate.impl.SessionImpl@69180030] for Hibernate transaction
+DEBUG main org.springframework.orm.hibernate3.HibernateTransactionManager - Preparing JDBC Connection of Hibernate Session [org.hibernate.impl.SessionImpl@69180030]
+DEBUG main org.hibernate.transaction.JDBCTransaction - begin
+DEBUG main org.hibernate.jdbc.ConnectionManager - opening JDBC connection
+DEBUG main org.hibernate.transaction.JDBCTransaction - current autocommit status: true
+DEBUG main org.hibernate.transaction.JDBCTransaction - disabling autocommit
+DEBUG main org.springframework.orm.hibernate3.HibernateTransactionManager - Exposing Hibernate transaction as JDBC transaction [jdbc:mysql://localhost:3306/spring, UserName=root@localhost, MySQL-AB JDBC Driver]
+DEBUG main org.hibernate.event.def.AbstractSaveEventListener - executing identity-insert immediately
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - insert into User (name) values (?)
+DEBUG main org.hibernate.id.IdentifierGeneratorFactory - Natively generated identity: 19
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.hibernate.event.def.AbstractSaveEventListener - executing identity-insert immediately
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main org.hibernate.SQL - insert into Log (msg) values (?)
+DEBUG main org.hibernate.id.IdentifierGeneratorFactory - Natively generated identity: 4
+DEBUG main org.hibernate.jdbc.AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main org.springframework.orm.hibernate3.HibernateTransactionManager - Initiating transaction commit
+DEBUG main org.springframework.orm.hibernate3.HibernateTransactionManager - Committing Hibernate transaction on Session [org.hibernate.impl.SessionImpl@69180030]
+DEBUG main org.hibernate.transaction.JDBCTransaction - commit
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - processing flush-time cascades
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - dirty checking collections
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 2 objects
+DEBUG main org.hibernate.event.def.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG main org.hibernate.pretty.Printer - listing entities:
+DEBUG main org.hibernate.pretty.Printer - com.bjsxt.model.Log{id=4, msg=save a User at }
+DEBUG main org.hibernate.pretty.Printer - com.bjsxt.model.User{id=19, name=5xxxx5}
+DEBUG main org.hibernate.transaction.JDBCTransaction - re-enabling autocommit
+DEBUG main org.hibernate.transaction.JDBCTransaction - committed JDBC Connection
+DEBUG main org.hibernate.jdbc.ConnectionManager - transaction completed on session with on_close connection release mode; be sure to close the session to release JDBC resources!
+DEBUG main org.springframework.orm.hibernate3.HibernateTransactionManager - Closing Hibernate Session [org.hibernate.impl.SessionImpl@69180030] after transaction
+DEBUG main org.springframework.orm.hibernate3.SessionFactoryUtils - Closing Hibernate Session
+DEBUG main org.hibernate.jdbc.ConnectionManager - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+DEBUG main org.hibernate.jdbc.ConnectionManager - transaction completed on session with on_close connection release mode; be sure to close the session to release JDBC resources!
+INFO main org.springframework.context.support.ClassPathXmlApplicationContext - Closing org.springframework.context.support.ClassPathXmlApplicationContext@62bb8ae8: display name [org.springframework.context.support.ClassPathXmlApplicationContext@62bb8ae8]; startup date [Mon May 25 11:43:27 CST 2015]; root of context hierarchy
+INFO main org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6c880adc: defining beans [logDAOImpl,userDAOImpl,userService,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,logIntercepter,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,sessionFactory,txManager,org.springframework.aop.config.internalAutoProxyCreator,businessService,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,txAdvice]; root of factory hierarchy
+DEBUG main org.springframework.context.annotation.CommonAnnotationBeanPostProcessor - Invoking destroy method on bean 'userService': public void com.bjsxt.service.UserService.destroy()
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Retrieved dependent beans for bean '(inner bean)': [txAdvice]
+DEBUG main org.springframework.beans.factory.support.DisposableBeanAdapter - Invoking destroy() on bean with name 'sessionFactory'
+INFO main org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean - Closing Hibernate SessionFactory
+INFO main org.hibernate.impl.SessionFactoryImpl - closing
+DEBUG main org.springframework.beans.factory.support.DisposableBeanAdapter - Invoking destroy method 'close' on bean with name 'dataSource'
+INFO main org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@69cb7fc: display name [org.springframework.context.support.ClassPathXmlApplicationContext@69cb7fc]; startup date [Mon May 25 11:46:04 CST 2015]; root of context hierarchy
+INFO main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [beans.xml]
+DEBUG main org.springframework.beans.factory.xml.DefaultDocumentLoader - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Loading schema mappings from [META-INF/spring.schemas]
+DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Loaded schema mappings: {http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/jms/spring-jms-2.5.xsd=org/springframework/jms/config/spring-jms-2.5.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/jms/spring-jms.xsd=org/springframework/jms/config/spring-jms-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd}
+DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/beans/spring-beans-2.5.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-2.5.xsd
+DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/context/spring-context-2.5.xsd] in classpath: org/springframework/context/config/spring-context-2.5.xsd
+DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/aop/spring-aop-2.5.xsd] in classpath: org/springframework/aop/config/spring-aop-2.5.xsd
+DEBUG main org.springframework.beans.factory.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/tx/spring-tx-2.5.xsd] in classpath: org/springframework/transaction/config/spring-tx-2.5.xsd
+DEBUG main org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader - Loading bean definitions
+DEBUG main org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver - Loaded mappings [{http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jms=org.springframework.jms.config.JmsNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt] for files matching pattern [F:/java/project/Spring_1800_HibernateSpring/bin/com/bjsxt/**/*.class]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\aop] for files matching pattern [F:/java/project/Spring_1800_HibernateSpring/bin/com/bjsxt/**/*.class]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\dao] for files matching pattern [F:/java/project/Spring_1800_HibernateSpring/bin/com/bjsxt/**/*.class]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\dao\impl] for files matching pattern [F:/java/project/Spring_1800_HibernateSpring/bin/com/bjsxt/**/*.class]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\model] for files matching pattern [F:/java/project/Spring_1800_HibernateSpring/bin/com/bjsxt/**/*.class]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\service] for files matching pattern [F:/java/project/Spring_1800_HibernateSpring/bin/com/bjsxt/**/*.class]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/bjsxt/**/*.class] to resources [file [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\aop\LogInterceptor.class], file [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\dao\impl\LogDAOImpl.class], file [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\dao\impl\UserDAOImpl.class], file [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\dao\LogDao.class], file [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\dao\UserDAO.class], file [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\model\Log.class], file [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\model\User.class], file [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\service\UserService.class], file [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\service\UserServiceTest.class]]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\dao\impl\LogDAOImpl.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\dao\impl\UserDAOImpl.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [F:\java\project\Spring_1800_HibernateSpring\bin\com\bjsxt\service\UserService.class]
+DEBUG main org.springframework.beans.factory.xml.BeanDefinitionParserDelegate - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0]
+DEBUG main org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 16 bean definitions from location pattern [beans.xml]
+INFO main org.springframework.context.support.ClassPathXmlApplicationContext - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@69cb7fc]: org.springframework.beans.factory.support.DefaultListableBeanFactory@f5ba5a5
+DEBUG main org.springframework.context.support.ClassPathXmlApplicationContext - 16 beans defined in org.springframework.context.support.ClassPathXmlApplicationContext@69cb7fc: display name [org.springframework.context.support.ClassPathXmlApplicationContext@69cb7fc]; startup date [Mon May 25 11:46:04 CST 2015]; root of context hierarchy
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+INFO main org.springframework.beans.factory.config.PropertyPlaceholderConfigurer - Loading properties file from class path resource [jdbc.properties]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
